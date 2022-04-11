@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% minmax(200px, auto);
+}
+.chat-area {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 50px;
+  padding: 40px 40px;
+  border: thick solid blue;
+  overflow: auto;
+
+  height: 500px;
+}
+.chat-area ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-area .received {
+  color: green;
+  text-decoration: none;
+  list-style-type: none;
+  height: 28px;
+  width: max-content;
+  background-color: blueviolet;
+  color: white;
+  margin: 20px;
+  border-radius: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-self: flex-start;
+}
+
+.chat-area .sent {
+  color: green;
+  text-decoration: none;
+  list-style-type: none;
+  height: 28px;
+  width: max-content;
+  background-color: green;
+  color: white;
+  margin: 20px;
+  border-radius: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-self: flex-end;
+}
+
+.send-message {
+  grid-column-start: 2;
+}
